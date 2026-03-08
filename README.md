@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Milipatel3110&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
   <a href="https://linkedin.com/in/milipatel3110"><img src="https://img.shields.io/badge/-Mili%20Patel-blue?style=flat&logo=Linkedin&logoColor=white" /></a>
-  <a href="mailto:milipatel3110@gmail.com"><img src="https://img.shields.io/badge/-milipatel3110@gmail.com-red?style=flat&logo=Gmail&logoColor=white" /></a>
+  <a href="mailto:milipatel.career@gmail.com"><img src="https://img.shields.io/badge/-milipatel.career@gmail.com-red?style=flat&logo=Gmail&logoColor=white" /></a>
 </p>
 
 ---
@@ -103,7 +103,7 @@ Check out my portfolio's AI chatbot to get personalized learning paths for:
 <p align="left">
   <a href="https://linkedin.com/in/milipatel3110"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/Milipatel3110"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" /></a>
-  <a href="mailto:milipatel3110@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:miliapatel3110@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
 </p>
 
 Feel free to reach out for collaborations, discussions, or just to say hi! 👋
@@ -228,7 +228,7 @@ Deploy to Vercel with zero configuration:
 2. Import the project in Vercel
 3. Deploy!
 
-The site is live at: [https://mili-portfolio.vercel.app](https://mili-portfolio.vercel.app)
+The site is live at: [https://www.miliipatel.com/](https://www.miliipatel.com/)
 
 ## 🤝 Contributing
 
