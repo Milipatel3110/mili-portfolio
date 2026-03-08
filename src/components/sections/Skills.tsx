@@ -15,6 +15,7 @@ import {
   Shield,
   GitBranch,
   Bot,
+  Sparkles,
 } from "lucide-react";
 
 const fadeUp: Variants = {
@@ -51,7 +52,7 @@ function SectionTitle({ title, subtitle }: { title: string; subtitle: string }) 
     <div className="text-center">
       <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
         {parts.join(" ")}{" "}
-        <span className="bg-gradient-to-r from-[rgba(78,155,255,1)] via-[rgba(120,119,198,1)] to-[rgba(255,91,193,1)] bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[rgba(170,255,106,1)] via-[rgba(120,119,198,1)] to-[rgba(255,91,193,1)] bg-clip-text text-transparent">
           {last}
         </span>
       </h2>
@@ -69,12 +70,12 @@ function TopBadge({
 }) {
   const cls =
     tone === "green"
-      ? "border-emerald-500/25 bg-emerald-500/15 text-emerald-200"
+      ? "border-emerald-500/25 bg-emerald-500/15 text-emerald-200 dark:text-emerald-200 text-emerald-700"
       : tone === "blue"
-      ? "border-sky-500/25 bg-sky-500/15 text-sky-200"
+      ? "border-sky-500/25 bg-sky-500/15 text-sky-200 dark:text-sky-200 text-sky-700"
       : tone === "amber"
-      ? "border-amber-500/25 bg-amber-500/15 text-amber-200"
-      : "border-purple-500/25 bg-purple-500/15 text-purple-200";
+      ? "border-amber-500/25 bg-amber-500/15 text-amber-200 dark:text-amber-200 text-amber-700"
+      : "border-purple-500/25 bg-purple-500/15 text-purple-200 dark:text-purple-200 text-purple-700";
 
   // In light mode, these token-based pills still look fine because your bg-mesh + card-glass handles contrast.
   // We also keep text readable by relying on the token colors.
@@ -84,15 +85,30 @@ function TopBadge({
 function LevelBadge({ level }: { level: Level }) {
   const cls =
     level === "Expert"
-      ? "border-emerald-500/25 bg-emerald-500/15 text-emerald-200"
+      ? "border-emerald-500/25 bg-emerald-500/15 text-emerald-200 dark:text-emerald-200 text-emerald-700"
       : level === "Advanced"
-      ? "border-sky-500/25 bg-sky-500/15 text-sky-200"
-      : "border-amber-500/25 bg-amber-500/15 text-amber-200";
+      ? "border-sky-500/25 bg-sky-500/15 text-sky-200 dark:text-sky-200 text-sky-700"
+      : "border-amber-500/25 bg-amber-500/15 text-amber-200 dark:text-amber-200 text-amber-700";
 
   return <span className={`shrink-0 rounded-full border px-3 py-1 text-[11px] font-semibold ${cls}`}>{level}</span>;
 }
 
 const GROUPS: SkillGroup[] = [
+  {
+    title: "Generative AI & LLMs",
+    subtitle: "Building AI-powered applications",
+    icon: Sparkles,
+    badge: { label: "Advanced", tone: "purple" },
+    items: [
+      { name: "Generative AI", level: "Advanced" },
+      { name: "Large Language Models (LLMs)", level: "Advanced" },
+      { name: "LangChain", level: "Advanced" },
+      { name: "RAG Systems", level: "Advanced" },
+      { name: "Vector Databases (ChromaDB)", level: "Advanced" },
+      { name: "Prompt Engineering", level: "Advanced" },
+      { name: "AI Agents", level: "Intermediate" },
+    ],
+  },
   {
     title: "Machine Learning & AI",
     subtitle: "Deep learning, anomaly/OOD, and applied CV research",
@@ -105,7 +121,7 @@ const GROUPS: SkillGroup[] = [
       { name: "Computer Vision", level: "Advanced" },
       { name: "OOD / Anomaly Detection", level: "Advanced" },
       { name: "Deep Learning", level: "Advanced" },
-      { name: "NLP / LLM basics", level: "Intermediate" },
+      { name: "NLP", level: "Advanced" },
     ],
   },
   {
@@ -241,6 +257,21 @@ const GROUPS: SkillGroup[] = [
       { name: "Code reviews", level: "Advanced" },
       { name: "Issue/PR workflows", level: "Advanced" },
       { name: "Documentation", level: "Advanced" },
+    ],
+  },
+  {
+    title: "AI Tools & Development Practices",
+    subtitle: "Using AI as force multipliers",
+    icon: Bot,
+    badge: { label: "Advanced", tone: "blue" },
+    items: [
+      { name: "Claude AI", level: "Advanced" },
+      { name: "GitHub Copilot", level: "Advanced" },
+      { name: "AWS AI Tools (Kiro)", level: "Intermediate" },
+      { name: "Clean Code & Scalability", level: "Advanced" },
+      { name: "Test-Driven Development", level: "Intermediate" },
+      { name: "Prototype & Iterate", level: "Advanced" },
+      { name: "Developer Automation", level: "Intermediate" },
     ],
   },
 ];
