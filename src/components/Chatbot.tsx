@@ -408,10 +408,12 @@ export default function Chatbot() {
   const handleSend = () => {
     if (!input.trim()) return;
 
+    const userContent = input.trim();
+    
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
-      content: input.trim(),
+      content: userContent,
     };
 
     setMessages((prev) => [...prev, userMessage]);
@@ -419,7 +421,7 @@ export default function Chatbot() {
     setIsTyping(true);
 
     setTimeout(() => {
-      const answer = getRelevantAnswer(userMessage.content);
+      const answer = getRelevantAnswer(userContent);
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
