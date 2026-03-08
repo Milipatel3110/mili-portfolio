@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Milipatel3110&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
-  <a href="https://linkedin.com/in/milipatel3110"><img src="https://img.shields.io/badge/-Mili%20Patel-blue?style=flat&logo=Linkedin&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/mili-patel-9859b7200/"><img src="https://img.shields.io/badge/-Mili%20Patel-blue?style=flat&logo=Linkedin&logoColor=white" /></a>
   <a href="mailto:milipatel.career@gmail.com"><img src="https://img.shields.io/badge/-milipatel.career@gmail.com-red?style=flat&logo=Gmail&logoColor=white" /></a>
 </p>
 
